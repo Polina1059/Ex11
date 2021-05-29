@@ -3,10 +3,10 @@
 #define INCLUDE_TRAIN_H_
 
 class Cage {
-  bool light;  // Свет (вкл/выкл)
+  bool light;  
  public:
-  Cage* next;  // следующий вагон
-  Cage* prev;  // предыдущий вагон
+  Cage* next;  
+  Cage* prev;  
   Cage() : light(false), next(nullptr), prev(nullptr) {}
   void on() { light = true; }
   void off() { light = false; }
@@ -14,9 +14,12 @@ class Cage {
 };
 
 class Train {
-  Cage* first;  // указатель на первый вагон
-  Cage* last;   // указатель на последний вагон
+  Cage* first;  
+  Cage* last;   
  public:
-
+  Train() : first(nullptr), last(nullptr) {}
+  void add_cage();
+  void print_cages();
+  int find_length();
 };
 #endif  // INCLUDE_TRAIN_H_
