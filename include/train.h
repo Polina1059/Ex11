@@ -5,8 +5,8 @@
 class Cage {
   bool light;  
  public:
-  Cage* next;  
-  Cage* prev;  
+  Cage* next;
+  Cage* prev;
   Cage() : light(false), next(nullptr), prev(nullptr) {}
   void on() { light = true; }
   void off() { light = false; }
@@ -14,8 +14,8 @@ class Cage {
 };
 
 class Train {
-  Cage* first;  
-  Cage* last;   
+  Cage* first;
+  Cage* last;
  public:
   Train() : first(nullptr), last(nullptr) {}
   void add_cage();

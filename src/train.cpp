@@ -14,7 +14,7 @@ void Train::add_cage(){
   new_cage->next = first;
   last->next = new_cage;
   last = new_cage;
-};
+}
 
 void Train::print_cages(){
   int i = 1;
@@ -25,7 +25,7 @@ void Train::print_cages(){
     i++;
   }
   std::cout << i << last->get() << '\n';
-};
+}
 
 int Train::find_length(){
   Cage* cage = first;
@@ -41,4 +41,4 @@ int Train::find_length(){
     num++;
   }
   return num;
-};
+}
