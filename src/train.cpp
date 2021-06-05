@@ -2,7 +2,7 @@
 #include "train.h"
 #include <iostream>
 
-void Train::add_cage(){
+void Train::add_cage() {
   Cage* new_cage = new Cage();
   if (!first) {
     first = new_cage;
@@ -16,7 +16,7 @@ void Train::add_cage(){
   last = new_cage;
 }
 
-void Train::print_cages(){
+void Train::print_cages() {
   int i = 1;
   Cage* cage = first;
   while (cage != last) {
@@ -27,7 +27,7 @@ void Train::print_cages(){
   std::cout << i << last->get() << '\n';
 }
 
-int Train::find_length(){
+int Train::find_length() {
   Cage* cage = first;
   cage->on();
   int num = 1;

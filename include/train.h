@@ -3,7 +3,7 @@
 #define INCLUDE_TRAIN_H_
 
 class Cage {
-  bool light;  
+  bool light;
  public:
   Cage* next;
   Cage* prev;
